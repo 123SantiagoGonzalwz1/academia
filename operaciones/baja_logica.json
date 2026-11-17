@@ -1,0 +1,12 @@
+{
+  "id": "baja_v1",
+  "operaciones": [
+    {
+      "sql": "UPDATE profesor SET activo=? WHERE id=?",
+      "params": [
+        0,
+        3
+      ]
+    }
+  ]
+}

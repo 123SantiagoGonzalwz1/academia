@@ -1,0 +1,911 @@
+{
+  "id": "academicos_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO profesor VALUES (?,?,?,?,?)",
+      "params": [
+        1,
+        "DOC1",
+        "Ana Tutora",
+        "3000000001",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO profesor VALUES (?,?,?,?,?)",
+      "params": [
+        2,
+        "DOC2",
+        "Luis Especialista",
+        "3000000002",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO profesor VALUES (?,?,?,?,?)",
+      "params": [
+        3,
+        "DOC3",
+        "Marta Evaluadora",
+        "3000000003",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO asignatura VALUES (?,?,?)",
+      "params": [
+        "COM",
+        "Comunicación",
+        "TRONCAL"
+      ]
+    },
+    {
+      "sql": "INSERT INTO especialidad VALUES (?,?,?,?)",
+      "params": [
+        "ADM",
+        "Administración",
+        "Gestión administrativa",
+        "Técnico profesional"
+      ]
+    },
+    {
+      "sql": "INSERT INTO asignatura VALUES (?,?,?)",
+      "params": [
+        "ADMESP",
+        "Fundamentos de Administración",
+        "ESPECIALIDAD"
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "ADM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ADM",
+        1,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ADM",
+        1,
+        "ADMESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1A",
+        "ADM",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1A",
+        "ADM",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1A",
+        "ADM",
+        1,
+        "ADMESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1B",
+        "ADM",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1B",
+        "ADM",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM1B",
+        "ADM",
+        1,
+        "ADMESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "ADM",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ADM",
+        2,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ADM",
+        2,
+        "ADMESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2A",
+        "ADM",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2A",
+        "ADM",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2A",
+        "ADM",
+        2,
+        "ADMESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2B",
+        "ADM",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2B",
+        "ADM",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ADM2B",
+        "ADM",
+        2,
+        "ADMESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO especialidad VALUES (?,?,?,?)",
+      "params": [
+        "INF",
+        "Informática",
+        "Desarrollo de software",
+        "Técnico profesional"
+      ]
+    },
+    {
+      "sql": "INSERT INTO asignatura VALUES (?,?,?)",
+      "params": [
+        "INFESP",
+        "Fundamentos de Informática",
+        "ESPECIALIDAD"
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "INF",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "INF",
+        1,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "INF",
+        1,
+        "INFESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1A",
+        "INF",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1A",
+        "INF",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1A",
+        "INF",
+        1,
+        "INFESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1B",
+        "INF",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1B",
+        "INF",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF1B",
+        "INF",
+        1,
+        "INFESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "INF",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "INF",
+        2,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "INF",
+        2,
+        "INFESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2A",
+        "INF",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2A",
+        "INF",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2A",
+        "INF",
+        2,
+        "INFESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2B",
+        "INF",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2B",
+        "INF",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "INF2B",
+        "INF",
+        2,
+        "INFESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO especialidad VALUES (?,?,?,?)",
+      "params": [
+        "DEL",
+        "Delineación",
+        "Dibujo técnico",
+        "Técnico profesional"
+      ]
+    },
+    {
+      "sql": "INSERT INTO asignatura VALUES (?,?,?)",
+      "params": [
+        "DELESP",
+        "Fundamentos de Delineación",
+        "ESPECIALIDAD"
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "DEL",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "DEL",
+        1,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "DEL",
+        1,
+        "DELESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1A",
+        "DEL",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1A",
+        "DEL",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1A",
+        "DEL",
+        1,
+        "DELESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1B",
+        "DEL",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1B",
+        "DEL",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL1B",
+        "DEL",
+        1,
+        "DELESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "DEL",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "DEL",
+        2,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "DEL",
+        2,
+        "DELESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2A",
+        "DEL",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2A",
+        "DEL",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2A",
+        "DEL",
+        2,
+        "DELESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2B",
+        "DEL",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2B",
+        "DEL",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "DEL2B",
+        "DEL",
+        2,
+        "DELESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO especialidad VALUES (?,?,?,?)",
+      "params": [
+        "ELE",
+        "Electrónica",
+        "Sistemas electrónicos",
+        "Técnico profesional"
+      ]
+    },
+    {
+      "sql": "INSERT INTO asignatura VALUES (?,?,?)",
+      "params": [
+        "ELEESP",
+        "Fundamentos de Electrónica",
+        "ESPECIALIDAD"
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "ELE",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ELE",
+        1,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ELE",
+        1,
+        "ELEESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1A",
+        "ELE",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1A",
+        "ELE",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1A",
+        "ELE",
+        1,
+        "ELEESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1B",
+        "ELE",
+        1,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1B",
+        "ELE",
+        1,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE1B",
+        "ELE",
+        1,
+        "ELEESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO curso VALUES (?,?)",
+      "params": [
+        "ELE",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ELE",
+        2,
+        "COM"
+      ]
+    },
+    {
+      "sql": "INSERT INTO plan_estudio VALUES (?,?,?)",
+      "params": [
+        "ELE",
+        2,
+        "ELEESP"
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2A",
+        "ELE",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2A",
+        "ELE",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2A",
+        "ELE",
+        2,
+        "ELEESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO grupo VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2B",
+        "ELE",
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2B",
+        "ELE",
+        2,
+        "COM",
+        1
+      ]
+    },
+    {
+      "sql": "INSERT INTO docencia VALUES (?,?,?,?,?)",
+      "params": [
+        "ELE2B",
+        "ELE",
+        2,
+        "ELEESP",
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        1,
+        "ALU1",
+        "Alumno de prueba 01"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        2,
+        "ALU2",
+        "Alumno de prueba 02"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        3,
+        "ALU3",
+        "Alumno de prueba 03"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        4,
+        "ALU4",
+        "Alumno de prueba 04"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        5,
+        "ALU5",
+        "Alumno de prueba 05"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        6,
+        "ALU6",
+        "Alumno de prueba 06"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        7,
+        "ALU7",
+        "Alumno de prueba 07"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        8,
+        "ALU8",
+        "Alumno de prueba 08"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        9,
+        "ALU9",
+        "Alumno de prueba 09"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        10,
+        "ALU10",
+        "Alumno de prueba 10"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        11,
+        "ALU11",
+        "Alumno de prueba 11"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        12,
+        "ALU12",
+        "Alumno de prueba 12"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        13,
+        "ALU13",
+        "Alumno de prueba 13"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        14,
+        "ALU14",
+        "Alumno de prueba 14"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        15,
+        "ALU15",
+        "Alumno de prueba 15"
+      ]
+    },
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        16,
+        "ALU16",
+        "Alumno de prueba 16"
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        1,
+        1
+      ]
+    }
+  ]
+}

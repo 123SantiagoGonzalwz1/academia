@@ -1,0 +1,12 @@
+{
+  "id": "cerrar_v1",
+  "operaciones": [
+    {
+      "sql": "UPDATE proceso SET estado=? WHERE id=?",
+      "params": [
+        "SELECCIONADO",
+        1
+      ]
+    }
+  ]
+}

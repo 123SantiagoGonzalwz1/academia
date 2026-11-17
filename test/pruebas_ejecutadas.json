@@ -1,0 +1,92 @@
+[
+  {
+    "comando": "verificar",
+    "exit": 0,
+    "salida": "n1 20 tablas SHA256 571a4eed4db06be08220beef7650089968937702ab0ed190b1fb05b98683eb88\nn2 20 tablas SHA256 571a4eed4db06be08220beef7650089968937702ab0ed190b1fb05b98683eb88\nCOPIAS IGUALES (datos completos; no verifica DDL).\n"
+  },
+  {
+    "comando": "aplicar operaciones/datos_academicos.json",
+    "exit": 0,
+    "salida": "n1 PREPARED academicos_v1\nn2 PREPARED academicos_v1\nDecisión durable COMMIT academicos_v1\nn1 COMMIT academicos_v1\nn2 COMMIT academicos_v1\nacademicos_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/actividad.json",
+    "exit": 0,
+    "salida": "n1 PREPARED actividad_v1\nn2 PREPARED actividad_v1\nDecisión durable COMMIT actividad_v1\nn1 COMMIT actividad_v1\nn2 COMMIT actividad_v1\nactividad_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/seleccion.json",
+    "exit": 0,
+    "salida": "n1 PREPARED seleccion_v1\nn2 PREPARED seleccion_v1\nDecisión durable COMMIT seleccion_v1\nn1 COMMIT seleccion_v1\nn2 COMMIT seleccion_v1\nseleccion_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/cerrar_proceso.json",
+    "exit": 0,
+    "salida": "n1 PREPARED cerrar_v1\nn2 PREPARED cerrar_v1\nDecisión durable COMMIT cerrar_v1\nn1 COMMIT cerrar_v1\nn2 COMMIT cerrar_v1\ncerrar_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/mantenimiento.json",
+    "exit": 0,
+    "salida": "n1 PREPARED mantenimiento_v1\nn2 PREPARED mantenimiento_v1\nDecisión durable COMMIT mantenimiento_v1\nn1 COMMIT mantenimiento_v1\nn2 COMMIT mantenimiento_v1\nmantenimiento_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/baja_logica.json",
+    "exit": 0,
+    "salida": "n1 PREPARED baja_v1\nn2 PREPARED baja_v1\nDecisión durable COMMIT baja_v1\nn1 COMMIT baja_v1\nn2 COMMIT baja_v1\nbaja_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/datos_academicos.json",
+    "exit": 0,
+    "salida": "academicos_v1 ya confirmado; no se duplica.\n"
+  },
+  {
+    "comando": "aplicar operaciones/rechazo.json rechazo",
+    "exit": 1,
+    "salida": "n1 PREPARED rechazo_v1\nInterrupción: Voto NO simulado.\nrechazo_v1 ABORT COMPLETA\nERROR: Operación interrumpida; revisar decisión en estado.\n"
+  },
+  {
+    "comando": "aplicar operaciones/antes_decision.json antes_decision",
+    "exit": 20,
+    "salida": "n1 PREPARED antes_v1\n"
+  },
+  {
+    "comando": "estado",
+    "exit": 0,
+    "salida": "[\n    {\n        \"id\": \"academicos_v1\",\n        \"hash\": \"ef884b9ee729b1f879138a36aac8906cac325273c174aad08b6bacd5c4592550\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"actividad_v1\",\n        \"hash\": \"be9a566dc73cf7ab0b80ea793f5af5fc51fac9c7122ef6235da04059f03911db\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"seleccion_v1\",\n        \"hash\": \"595f1b9389e21fa940b7cfc946873072b1dd1371775cc2f309a7d92b83bec3ce\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"cerrar_v1\",\n        \"hash\": \"a2aee833d93ba3d54d0de9f4704e21ca4b6a17f14c813f703627482cb6dd8bca\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"mantenimiento_v1\",\n        \"hash\": \"ccd6fcb148bb389170f30a0ee7203aa4782fdc3b7a9403660b6067546738cdb8\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"baja_v1\",\n        \"hash\": \"72592a6d8c7ad1a4b21cda96b668a0054a4e13fc5ffaba23e6ff3324d78a62d4\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"rechazo_v1\",\n        \"hash\": \"53ea474ee156c8750f9a9403485ebb226bb612d4ce92f117e14e0c28c0d6ab66\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"ABORT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"antes_v1\",\n        \"hash\": \"002e885eb1bc5b1e3032707ab5ab06db4a319cbfd58f4cd4b38e6deaec08b408\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"INICIO\",\n        \"completa\": 0\n    }\n]\nn1 XA [{\"formatID\":1,\"gtrid_length\":12,\"bqual_length\":0,\"data\":\"aca_antes_v1\"}]\nn2 XA []\n"
+  },
+  {
+    "comando": "recuperar",
+    "exit": 0,
+    "salida": "antes_v1 ABORT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/despues_commit.json despues_commit",
+    "exit": 21,
+    "salida": "n1 PREPARED despues_v1\nn2 PREPARED despues_v1\nDecisión durable COMMIT despues_v1\nn1 COMMIT despues_v1\n"
+  },
+  {
+    "comando": "estado",
+    "exit": 0,
+    "salida": "[\n    {\n        \"id\": \"academicos_v1\",\n        \"hash\": \"ef884b9ee729b1f879138a36aac8906cac325273c174aad08b6bacd5c4592550\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"actividad_v1\",\n        \"hash\": \"be9a566dc73cf7ab0b80ea793f5af5fc51fac9c7122ef6235da04059f03911db\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"seleccion_v1\",\n        \"hash\": \"595f1b9389e21fa940b7cfc946873072b1dd1371775cc2f309a7d92b83bec3ce\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"cerrar_v1\",\n        \"hash\": \"a2aee833d93ba3d54d0de9f4704e21ca4b6a17f14c813f703627482cb6dd8bca\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"mantenimiento_v1\",\n        \"hash\": \"ccd6fcb148bb389170f30a0ee7203aa4782fdc3b7a9403660b6067546738cdb8\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"baja_v1\",\n        \"hash\": \"72592a6d8c7ad1a4b21cda96b668a0054a4e13fc5ffaba23e6ff3324d78a62d4\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"rechazo_v1\",\n        \"hash\": \"53ea474ee156c8750f9a9403485ebb226bb612d4ce92f117e14e0c28c0d6ab66\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"ABORT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"antes_v1\",\n        \"hash\": \"002e885eb1bc5b1e3032707ab5ab06db4a319cbfd58f4cd4b38e6deaec08b408\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"ABORT\",\n        \"completa\": 1\n    },\n    {\n        \"id\": \"despues_v1\",\n        \"hash\": \"86244a18843bc04cdcf07dcaae0d0fef0f9b8d6242b9342db76dc9d36972016a\",\n        \"topologia\": \"{\\\"n1\\\":[\\\"127.0.0.1\\\",3307],\\\"n2\\\":[\\\"127.0.0.1\\\",3308]}\",\n        \"decision\": \"COMMIT\",\n        \"completa\": 0\n    }\n]\nn1 XA []\nn2 XA [{\"formatID\":1,\"gtrid_length\":14,\"bqual_length\":0,\"data\":\"aca_despues_v1\"}]\n"
+  },
+  {
+    "comando": "recuperar",
+    "exit": 0,
+    "salida": "despues_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/llenar_grupo.json",
+    "exit": 0,
+    "salida": "n1 PREPARED llenar_v1\nn2 PREPARED llenar_v1\nDecisión durable COMMIT llenar_v1\nn1 COMMIT llenar_v1\nn2 COMMIT llenar_v1\nllenar_v1 COMMIT COMPLETA\n"
+  },
+  {
+    "comando": "aplicar operaciones/exceder_cupo.json",
+    "exit": 1,
+    "salida": "Interrupción: SQLSTATE[23000]: Integrity constraint violation: 4025 CONSTRAINT `matricula.plaza` failed for `academia`.`matricula`\nexceso_v1 ABORT COMPLETA\nERROR: Operación interrumpida; revisar decisión en estado.\n"
+  },
+  {
+    "comando": "verificar",
+    "exit": 0,
+    "salida": "n1 20 tablas SHA256 e4ef1db7209ab49d5f3f9d5232617940d29be13d698ee3952c6461e99e47f9aa\nn2 20 tablas SHA256 e4ef1db7209ab49d5f3f9d5232617940d29be13d698ee3952c6461e99e47f9aa\nCOPIAS IGUALES (datos completos; no verifica DDL).\n"
+  }
+]

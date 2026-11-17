@@ -1,0 +1,13 @@
+{
+  "id": "despues_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        103,
+        "TEST103",
+        "Prueba 10_despues_commit"
+      ]
+    }
+  ]
+}

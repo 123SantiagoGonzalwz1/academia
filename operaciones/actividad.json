@@ -1,0 +1,36 @@
+{
+  "id": "actividad_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO hoja_diaria VALUES (?,?,?,?)",
+      "params": [
+        1,
+        1,
+        "2026-11-15",
+        "Ana Tutora - firma de prueba"
+      ]
+    },
+    {
+      "sql": "INSERT INTO clase VALUES (?,?,?,?,?,?,?,?)",
+      "params": [
+        1,
+        1,
+        1,
+        "INF1A",
+        "COM",
+        "08:00:00",
+        "09:00:00",
+        "Comunicación profesional"
+      ]
+    },
+    {
+      "sql": "INSERT INTO asistencia VALUES (?,?,?,?)",
+      "params": [
+        1,
+        "INF1A",
+        1,
+        "Alumno 01 - firma de prueba"
+      ]
+    }
+  ]
+}

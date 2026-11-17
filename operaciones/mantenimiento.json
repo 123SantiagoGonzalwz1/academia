@@ -1,0 +1,12 @@
+{
+  "id": "mantenimiento_v1",
+  "operaciones": [
+    {
+      "sql": "UPDATE profesor SET telefono=? WHERE id=?",
+      "params": [
+        "3009999999",
+        2
+      ]
+    }
+  ]
+}

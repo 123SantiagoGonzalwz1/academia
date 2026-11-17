@@ -1,0 +1,11 @@
+USE academia;
+SELECT VERSION(), @@port, @@datadir;
+SELECT * FROM v_especialidad;
+SELECT * FROM grupo ORDER BY codigo;
+SELECT grupo,COUNT(*) alumnos FROM matricula GROUP BY grupo;
+SELECT * FROM v_ficha_alumno;
+SELECT * FROM v_evaluacion;
+SELECT id,estado FROM proceso;
+SELECT * FROM tx_aplicada ORDER BY id;
+SELECT id,nombre FROM alumno WHERE id>=101;
+XA RECOVER;

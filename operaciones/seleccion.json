@@ -1,0 +1,86 @@
+{
+  "id": "seleccion_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO candidato VALUES (?,?,?,?)",
+      "params": [
+        1,
+        "CAND1",
+        "Camila Candidata",
+        "3000000004"
+      ]
+    },
+    {
+      "sql": "INSERT INTO vacante VALUES (?,?,?)",
+      "params": [
+        1,
+        "INF",
+        "Profesor especialista de informática"
+      ]
+    },
+    {
+      "sql": "INSERT INTO comite VALUES (?,?,?,?)",
+      "params": [
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "sql": "INSERT INTO proceso VALUES (?,?,?,?,?)",
+      "params": [
+        1,
+        1,
+        1,
+        1,
+        "ABIERTO"
+      ]
+    },
+    {
+      "sql": "INSERT INTO llamada VALUES (?,?,?,?)",
+      "params": [
+        1,
+        1,
+        "2026-11-15 09:00:00",
+        "Contacto y citación confirmados"
+      ]
+    },
+    {
+      "sql": "INSERT INTO entrevista VALUES (?,?,?,?)",
+      "params": [
+        1,
+        1,
+        "2026-11-15 14:00:00",
+        "Presenta experiencia docente"
+      ]
+    },
+    {
+      "sql": "INSERT INTO evaluacion VALUES (?,?,?,?)",
+      "params": [
+        1,
+        "PRESIDENTE",
+        90,
+        "Evaluación de prueba"
+      ]
+    },
+    {
+      "sql": "INSERT INTO evaluacion VALUES (?,?,?,?)",
+      "params": [
+        1,
+        "SECRETARIO",
+        85,
+        "Evaluación de prueba"
+      ]
+    },
+    {
+      "sql": "INSERT INTO evaluacion VALUES (?,?,?,?)",
+      "params": [
+        1,
+        "VOCAL",
+        88,
+        "Evaluación de prueba"
+      ]
+    }
+  ]
+}

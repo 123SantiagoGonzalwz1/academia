@@ -1,0 +1,13 @@
+{
+  "id": "rechazo_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO alumno VALUES (?,?,?)",
+      "params": [
+        101,
+        "TEST101",
+        "Prueba 08_rechazo"
+      ]
+    }
+  ]
+}

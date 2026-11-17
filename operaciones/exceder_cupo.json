@@ -1,0 +1,13 @@
+{
+  "id": "exceso_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        16,
+        16
+      ]
+    }
+  ]
+}

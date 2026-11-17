@@ -1,0 +1,117 @@
+{
+  "id": "llenar_v1",
+  "operaciones": [
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        2,
+        2
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        3,
+        3
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        4,
+        4
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        5,
+        5
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        6,
+        6
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        7,
+        7
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        8,
+        8
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        9,
+        9
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        10,
+        10
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        11,
+        11
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        12,
+        12
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        13,
+        13
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        14,
+        14
+      ]
+    },
+    {
+      "sql": "INSERT INTO matricula VALUES (?,?,?)",
+      "params": [
+        "INF1A",
+        15,
+        15
+      ]
+    }
+  ]
+}
